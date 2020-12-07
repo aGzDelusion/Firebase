@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body,
+html {
+    min-width: 800px;
+    background-color: black !important;
+    font-family: Roboto !important;
+}
+
+a {
+    color: rgba(200, 200, 200, 0.747) !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+.content {
+    flex: content;
+    position: relative;
+    left: 25%;
+    align-content: center;
+    font-kerning: normal;
+}
+
+p {
+    font-family: Roboto !important;
+    color: white;
+    font-size: 0.7rem;
+}
+
+#font-kerning {
+    letter-spacing: 5px;
+}
+
+.name {
+    font-family: Roboto !important;
+    color: rgba(200, 200, 200, 0.747);
+    font-size: 0.7rem;
+    position: absolute;
+    left: 4%;
+}
+
+.span-1 {
+    padding: 0rem 2rem;
+}
+
+.span-2 {
+    padding: 0rem 3rem;
+}
+
+.font-pos {
+    font-size: 0.7rem;
+    position: absolute;
+    left: 52%;
+    color: rgba(200, 200, 200, 0.747);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.gallery {
+    position: absolute;
+    left: 44%;
+    top: 20%;
+    display: grid;
+    grid-template-columns: repeat(8, 8%);
+    grid-template-rows: repeat(7, 5vw);
+    /*grid-gap: 0.7rem;*/
+    column-gap: 0.8rem;
+    justify-content: center;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /** Alternative Syntax **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4;  */
+    /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4; */
+    /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.gallery__item--8 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.gallery__item--9 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+@media screen and (max-width: 800px) {
+    .font-pos,
+    .name,
+    .span-1 {
+        width: 50%;
+        font-size: 0.5rem;
+        letter-spacing: 2px;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
